@@ -13,6 +13,7 @@ class MainRouter implements IBaseRouter {
     }
 
     initRoutes() {
+        this.router.get('/', (req, res) => { res.send('<h1>Hello World!</h1>')});
     }
 
     initMiddleware() {
