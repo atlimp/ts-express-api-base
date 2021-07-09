@@ -34,9 +34,7 @@ class App {
 
     private config() {
         this.app.use(express.json());
-        this.app.use(cors({
-            origin: 'https://midnightlibrarian.is'
-        }));
+        this.app.use(cors());
     }
 
     private assets() {
